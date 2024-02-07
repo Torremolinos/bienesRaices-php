@@ -38,6 +38,6 @@ incluirTemplate('header', $inicio = true); // Incluimos el header de la página
     <p class="copyright">Todos los derechos Reservados 2024 &copy;</p>
     <?php
 
-    incluirTemplate('footer'); // Incluimos el footer de la página
+    incluirTemplate('footer', $inicio = true); // Incluimos el footer de la página
 
     ?>

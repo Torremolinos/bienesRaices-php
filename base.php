@@ -10,6 +10,6 @@ incluirTemplate('header', $inicio = true); // Incluimos el header de la página
 
 <?php
 
-incluirTemplate('footer'); // Incluimos el footer de la página
+incluirTemplate('footer', $inicio=true); // Incluimos el footer de la página
 
 ?>

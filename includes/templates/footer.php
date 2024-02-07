@@ -8,10 +8,10 @@
         </nav>
     </div>
 
-    <p class="copyright">Todos los derechos Reservados 2024 <?php echo date('Y')?> &copy;</p>
+    <p class="copyright">Todos los derechos Reservados <?php echo date('Y')?> &copy;</p> <!-- ese codigo php es para que se actualice el año automáticamente-->
 </footer>
 
-<script src="build/js/bundle.min.js"></script>
+<script src="./build/js/bundle.min.js"></script>
 </body>
 
 </html>
