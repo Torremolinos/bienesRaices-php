@@ -10,7 +10,7 @@
 
 <body>
 
-    <header class="header <?php echo$inicio? 'inicio' : ''?>">
+    <header class="header <?php echo$inicio? 'inicio' : ''?>"> <!--para que se vea la hero image en el index.-->
         <div class="contenedor contenido-header">
             <div class="barra">
                 <a href="/">
