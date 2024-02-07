@@ -82,10 +82,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // $medida = 1000 * 1000;
 
     //Revisar que el arreglo de errores esté vacío
-    
-    if(empty('errores')){
-        //insertar en la base de daatos
 
-        $query= "INSERT INTO propiedades (titulo, precio, descripcion, habitaciones, wc, estacionamiento, vendedores_Id) VALUES ('$titulo', '$precio', '$descripcion', '$habitaciones', '$wc', '$estacionamiento', '$vendedores_Id')";
+    if (empty('errores')) {
+
+        //insertar en la base de daatos
+        $query = "INSERT INTO propiedades (titulo, precio, descripcion, habitaciones, wc, estacionamiento, vendedores_Id) VALUES ('$titulo', '$precio', '$descripcion', '$habitaciones', '$wc', '$estacionamiento', '$vendedores_Id')";
+        echo $query; // Imprimimos la consulta a la base de datos
+
+        $resultado = mysqli_query($db, $query); // Realizamos la consulta a la base de datos para insertar la propiedad en la base de datos.
+
+        if ($resultado) {
+            echo "Insertado correctamente"; // Imprimimos un mensaje si la propiedad se insertó correctamente en la base de datos 
+        }
     }
 }
+
+require '../../includes/funciones.php'; // Incluimos el archivo de funciones para poder utilizar la función de la conexión a la base de datos
+incluirTemplate('header'); // Incluimos el header de la página $inicio = true es para que el header se muestre en la página de inicio
+
+?>
+<?php 
+incluirTemplate('footer'); // Incluimos el header de la página $inicio = true es para que el header se muestre en la página de inicio
+?>
