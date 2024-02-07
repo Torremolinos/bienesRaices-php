@@ -10,7 +10,7 @@ incluirTemplate('header', $inicio = true); // Incluimos el header de la página
 
     <div class="iconos-nosotros">
         <div class="icono">
-            <img src="build/img/icono1.svg" alt="Icono seguridad" loading="lazy">
+            <img src="/bienesraices/build/img/icono1.svg" alt="Icono seguridad" loading="lazy">
             <h3>Seguridad</h3>
             <p>Possimus, suscipit repudiandae. Autem deserunt aliquid deleniti sit minus consectetur obcaecati molestiae dolorem natus dolores reiciendis tempore, explicabo cum nobis laudantium. Voluptates?</p>
         </div>
@@ -204,6 +204,6 @@ incluirTemplate('header', $inicio = true); // Incluimos el header de la página
 
 <?php
 
-incluirTemplate('footer'); // Incluimos el footer de la página
+incluirTemplate('footer', $inicio=true); // Incluimos el footer de la página
 
 ?>

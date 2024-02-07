@@ -1,4 +1,4 @@
-<?
+<?php
 
 require 'app.php'; // Incluimos el archivo de funciones para poder utilizar la función de la conexión a la base de datos
 
